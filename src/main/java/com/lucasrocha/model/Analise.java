@@ -125,9 +125,9 @@ public class Analise {
     }
   
      public void setRespTecnico(String respTecnico) {
-      this.responsavelTecnico = responsavelTecnico;
+      this.respTecnico = respTecnico;
     }
     
     public String getRespTecnico() {
-      return responsavelTecnico;
+      return respTecnico;
     }
