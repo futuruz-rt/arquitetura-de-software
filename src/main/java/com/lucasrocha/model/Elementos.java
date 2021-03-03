@@ -11,9 +11,10 @@ public class Elementos {
 	private double aluminio;
 	private double hAl;
 	private Elementos elementosAtuais = new Elemento();
-	private Elementos elementosIdeais = new Elemento();
-
-  //métodos SET e GET
+	private int texturaSolo;
+	private double acidezPotencial;
+		
+  	//métodos SET e GET
 	public double getFosforo(){
 		return fosforo;
 	}
@@ -62,5 +63,59 @@ public class Elementos {
 	public void sethAl(double hAl) {
 		this.hAl = hAl;
 	}
+	//
 	
+	//comparar os valores atuais com os ideais
+	public void setTexturaSolo(int texturaSolo) {
+        	this.texturaSolo = texturaSolo;
+   	}
+	
+	public double getFosforoIdeal() {
+		if (this.texturaSolo == 1) {
+		    return 9.0;
+		} else if (this.texturaSolo == 2) {
+		    return 12.0;
+		}        
+        	return 0.0;
+   	}
+	
+   	public double getPotassioIdeal() {
+		if (this.texturaSolo == 1) {
+		    return 0.35;
+		} else if (this.texturaSolo == 2) {
+		    return 0.25;
+		}        
+		    return 0.0;
+   	}
+    
+   	public double getCalcioIdeal() {
+		if (this.texturaSolo == 1) {
+		    return 6.0;
+		} else if (this.texturaSolo == 2) {
+		    return 4.0;
+		}        
+		    return 0.0;
+   	}
+    
+    	public double getMagnesioIdeal() {
+		if (this.texturaSolo == 1) {
+		    return 1.5;
+		} else if (this.texturaSolo == 2) {
+		    return 1.0;
+		}        
+		    return 0.0;
+    	}
+    
+   	public double getEnxofreIdeal() {
+		if (this.texturaSolo == 1) {
+		    return 9.0;
+		} else if (this.texturaSolo == 2) {
+		    return 6.0;
+		}
+		    return 0.0;
+    	}
+	
+    	public double getAluminioIdeal() {        
+        	return 0.0;
+    	}	
 }
