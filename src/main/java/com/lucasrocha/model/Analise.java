@@ -1,14 +1,13 @@
 package com.lucasrocha.model;
-
+import model.Elementos;
 import java.util.Date;
 
 public class Analise {
-    //informações que foram preenchidas no exemplo: talhão (inteiro), área do talhão (ha), área total (ha), profundidade (cm), textura do solo (índices)
+    //informações que foram preenchidas no exemplo: talhão (inteiro), área do talhão (ha), área total (ha), profundidade (cm)
     // dados que serão utilizados em cálculos
     private int numeroTalhao;
     private double areaTalhao;
     private double areaTotal;
-    private int texturaSolo;
     private int sistemaCultivo;    
     private double profundidadeAmostraSoloCm;
     private double resultadoAnalise;    
@@ -19,9 +18,8 @@ public class Analise {
     private String lote;
     private String matriculaLote;
     private String respTecnico;    
-    private Elemento elementosAtuais = new Elementos(); //instanciação da parte superior da tabela
-    private Elemento elementosIdeais = new Elementos(); //instanciação da parte inferior da tabela
-    
+    private Elementos elementosAtuais = new Elementos(); //instanciação da parte superior da tabela
+   
     //métodos SET e GET  
     public void setTalhao(int talhao) {
       this.talhao = talhao;
@@ -46,14 +44,6 @@ public class Analise {
     public double getAreaTotal() {
       return areaTotal;
     }  
-  
-    public void setTexturaSolo(int texturaSolo) {
-      this.texturaSolo = texturaSolo;
-    }
-
-    public int getTexturaSolo() {
-      return texturaSolo;
-    }
     
     public void setSistemaCultivo(int sistemaCultivo) {
       this.sistemaCultivo = sistemaCultivo;
@@ -86,15 +76,7 @@ public class Analise {
     public void setElementosAtuais(Elemento elementosAtuais) {
       this.elementosAtuais = elementosAtuais;
     }
-
-    public Elemento getElementosIdeais() {
-      return elementosIdeais;
-    }
-  
-    public void setElementosIdeais(Elementos elementosIdeais) {
-      this.elementosIdeais = elementosIdeais;
-    }
-    
+   
     public String getProdutor() {
       return produtor;
     }
@@ -116,12 +98,12 @@ public class Analise {
       this.municipio = municipio;
     }
     
-    public void setMatriculaLote(String matrculaLote) {
+    public void setMatriculaLote(String matriculaLote) {
       this.matriculaLote = matriculaLote;
     }
   
-    public String getMatrculaLote() {
-      return matrculaLote;
+    public String getMatriculaLote() {
+      return matriculaLote;
     }
   
      public void setRespTecnico(String respTecnico) {
