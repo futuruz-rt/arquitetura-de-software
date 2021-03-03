@@ -10,6 +10,8 @@ public class Elementos {
 	private double enxofre;
 	private double aluminio;
 	private double hAl;
+	private Elementos elementosAtuais = new Elemento();
+	private Elementos elementosIdeais = new Elemento();
 
   //métodos SET e GET
 	public double getFosforo(){
