@@ -18,8 +18,7 @@ public class Analise {
     private String lote;
     private String matriculaLote;
     private String respTecnico;    
-    private Elementos elementosAtuais = new Elementos(); //instanciação da parte superior da tabela
-   
+       
     //métodos SET e GET  
     public void setTalhao(int talhao) {
       this.talhao = talhao;
@@ -67,16 +66,8 @@ public class Analise {
   
     public int getResultadoAnalise() {
       return resultadoAnalise;
-    }
-    
-    public Elementos getElementosAtuais() {
-      return elementosAtuais;
-    }
-  
-    public void setElementosAtuais(Elemento elementosAtuais) {
-      this.elementosAtuais = elementosAtuais;
-    }
-   
+    }   
+     
     public String getProdutor() {
       return produtor;
     }
