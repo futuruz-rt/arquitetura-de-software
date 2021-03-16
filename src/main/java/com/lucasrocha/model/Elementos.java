@@ -117,5 +117,9 @@ public class Elementos {
 	
     	public double getAluminioIdeal() {        
         	return 0.0;
-    	}	
+    	}
+	
+	public double getHAl() {
+		return 0.0;
+    	}
 }
