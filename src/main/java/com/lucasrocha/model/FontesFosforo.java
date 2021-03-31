@@ -1,0 +1,16 @@
+package com.lucasrocha.arquitetura.model;
+
+public enum FontesFosforo {
+    SUPERFOSFATO_SIMPLES,
+    SUPERFOSFATO_TRIPLO,
+    MAP,
+    DAP,
+    TERMOFOSTATO_YOORIN,
+    FOSFATO_ARAD,
+    FOSFATO_GAFSA,
+    FOSFATO_DAOUI,
+    FOSFATO_NAT_PATOS_MINAS,
+    ESCORIA_THOMAS,
+    ACIDO_FOSFORICO,
+    MULTIFOSFATO_MAGNESIANO
+}
