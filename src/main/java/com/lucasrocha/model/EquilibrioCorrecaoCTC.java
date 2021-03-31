@@ -49,8 +49,12 @@ public class EquilibrioCorrecaoCTC {
         return aluminio;
     }
 
-    public double gethAl() {
-        return hAl;
+    public double getAcidezPotencial() {
+        return acidezPotencial;
+    }
+
+    public double getMo() {
+        return mo;
     }
 
     public double getFosforoIdeal() {
@@ -112,11 +116,6 @@ public class EquilibrioCorrecaoCTC {
         return 0.0;
     }
 
-    public double getHAl() {
-        return 0.0;
-    }
-
-    //calculo atual
     public double calcularSCmol(
             double potassio,
             double calcio,
@@ -125,7 +124,7 @@ public class EquilibrioCorrecaoCTC {
         return potassio + calcio + magnesio;
     }
 
-    public double calculaCTCCmol(
+    public double calcularCTCCmol(
             double potassio,
             double calcio,
             double magnesio,
