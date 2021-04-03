@@ -1,5 +1,5 @@
 package com.lucasrocha.arquitetura.model;
-
+//Parte do código foi retirado do Gabriel Costa Silva, disponível no link: https://github.com/gabrielcostasilva/sa-soilcorrection
 public class EquilibrioCorrecaoCTC {
 
     private TexturaSolo texturaSolo;
