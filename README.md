@@ -1,1 +1,1 @@
-Projeto para disciplina de Arquitetura do Software do curso de Engenharia de Software da UTFPR - CP
+Projeto para disciplina de Arquitetura do Software do curso de Engenharia de Software da UTFPR - CP. Parte do código foi retirado do Gabriel Costa Silva, disponível no link: https://github.com/gabrielcostasilva/sa-soilcorrection
