@@ -28,61 +28,48 @@ public class CorrecaoFosforo {
     }
 
     public ForneceCorrecao forneceCorrecaoFosforoUm() {
-        double itemValor;
         switch (this.fonteFosforo) {
             case TERMOFOSTATO_YOORIN:
-                itemValor = this.quantidadeFosforoAplicacao() * 0.15;
-                return new ForneceCorrecao(itemValor, Nutrientes.MAGNESIO);
+                return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.15, Nutrientes.MAGNESIO);
             case SUPERFOSFATO_SIMPLES:
-                itemValor = this.quantidadeFosforoAplicacao() * 0.1;
-                return new ForneceCorrecao(itemValor, Nutrientes.ENXOFRE);
+                return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.1, Nutrientes.ENXOFRE);
             case MULTIFOSFATO_MAGNESIANO:
-                itemValor = this.quantidadeFosforoAplicacao() * 0.11;
-                return new ForneceCorrecao(itemValor, Nutrientes.ENXOFRE);
+                return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.11, Nutrientes.ENXOFRE);
             default:
                 return null;
         }
     }
 
     public ForneceCorrecao forneceCorrecaoFosforoDois() {
-        double itemValor;
-
         if (this.fonteFosforo == FontesFosforo.SUPERFOSFATO_SIMPLES
                 || this.fonteFosforo == FontesFosforo.TERMOFOSTATO_YOORIN
                 || this.fonteFosforo == FontesFosforo.FOSFATO_NAT_PATOS_MINAS) {
-            itemValor = this.quantidadeFosforoAplicacao() * 0.28;
-            return new ForneceCorrecao(itemValor, Nutrientes.CALCIO);
+            return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.28, Nutrientes.CALCIO);
         }
 
         if (this.fonteFosforo == FontesFosforo.SUPERFOSFATO_TRIPLO) {
-            itemValor = this.quantidadeFosforoAplicacao() * 0.2;
-            return new ForneceCorrecao(itemValor, Nutrientes.CALCIO);
+            return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.2, Nutrientes.CALCIO);
         }
 
         if (this.fonteFosforo == FontesFosforo.MAP) {
-            itemValor = this.quantidadeFosforoAplicacao() * 0.09;
-            return new ForneceCorrecao(itemValor, Nutrientes.NITROGENIO);
+            return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.09, Nutrientes.NITROGENIO);
         }
 
         if (this.fonteFosforo == FontesFosforo.DAP) {
-            itemValor = this.quantidadeFosforoAplicacao() * 0.16;
-            return new ForneceCorrecao(itemValor, Nutrientes.NITROGENIO);
+            return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.16, Nutrientes.NITROGENIO);
         }
 
         if (this.fonteFosforo == FontesFosforo.FOSFATO_ARAD
                 || this.fonteFosforo == FontesFosforo.FOSFATO_GAFSA) {
-            itemValor = this.quantidadeFosforoAplicacao() * 0.52;
-            return new ForneceCorrecao(itemValor, Nutrientes.CALCIO);
+            return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.52, Nutrientes.CALCIO);
         }
 
         if (this.fonteFosforo == FontesFosforo.FOSFATO_DAOUI) {
-            itemValor = this.quantidadeFosforoAplicacao() * 0.45;
-            return new ForneceCorrecao(itemValor, Nutrientes.CALCIO);
+            return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.45, Nutrientes.CALCIO);
         }
 
         if (this.fonteFosforo == FontesFosforo.ESCORIA_THOMAS) {
-            itemValor = this.quantidadeFosforoAplicacao() * 0.44;
-            return new ForneceCorrecao(itemValor, Nutrientes.CALCIO);
+            return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.44, Nutrientes.CALCIO);
         }
 
         if (this.fonteFosforo == FontesFosforo.ACIDO_FOSFORICO) {
@@ -90,11 +77,9 @@ public class CorrecaoFosforo {
         }
 
         if (this.fonteFosforo == FontesFosforo.MULTIFOSFATO_MAGNESIANO) {
-            itemValor = this.quantidadeFosforoAplicacao() * 0.18;
-            return new ForneceCorrecao(itemValor, Nutrientes.CALCIO);
+            return new ForneceCorrecao(this.quantidadeFosforoAplicacao() * 0.18, Nutrientes.CALCIO);
         }
         return null;
-
     }
 
     public double custoFosforoAlqueire() {
