@@ -5,7 +5,7 @@ Uso da ferramenta cloc para realização da contagem de linhas de código, vale 
       10 text files.
       10 unique files.                              
        1 file ignored.
-
+-----------------------------
 github.com/AlDanial/cloc v 1.89  T=0.02 s (517.8 files/s, 24235.0 lines/s)
 
 Language                     files          blank        comment           code
