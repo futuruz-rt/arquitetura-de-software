@@ -1,15 +1,7 @@
-<pre>Projeto para disciplina de Arquitetura do Software do curso de Engenharia de Software da UTFPR - CP. Parte do código foi retirado do Gabriel Costa Silva, disponível no link: https://github.com/gabrielcostasilva/sa-soilcorrection</pre>
+Projeto para disciplina de Arquitetura do Software do curso de Engenharia de Software da UTFPR - CP. Parte do código foi retirado do Gabriel Costa Silva, disponível no link: https://github.com/gabrielcostasilva/sa-soilcorrection
 -----------------------------
 <pre>
 Uso da ferramenta cloc para realização da contagem de linhas de código, vale ressaltar que os testes não foram incluídos.
-./cloc arquitetura-de-software          
-      10 text files.
-      10 unique files.                              
-       1 file ignored.
-</pre>
------------------------------
-
-<pre>
 ./cloc arquitetura-de-software          
       10 text files.
       10 unique files.                              
