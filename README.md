@@ -73,4 +73,8 @@ Maven                            1              0              0             33
 SUM:                            10             74              2            426
 -------------------------------------------------------------------------------
 
+Referências:
+https://medium.com/collabcode/strategy-padr%C3%B5es-de-projeto-em-java-43889a3afc5a
+https://dzone.com/articles/enum-tricks-featured-enum-instead-of-switch
+https://www.baeldung.com/solid-principles
 </pre>
