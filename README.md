@@ -42,3 +42,35 @@ SUM:                            10             76              1            387
 -------------------------------------------------------------------------------
 
 </pre>
+
+<pre>
+Continuação - Atividade 3
+Problemas identificados após comentário do professor: 
+1 - Uso excessivo de condicionais, resolvido com uso de Strategy e operador ternário, o método é reescrito no enum.
+2 - Dois métodos realizando a mesma função
+Commits: 
+https://github.com/futuruz-rt/arquitetura-de-software/commit/53f9dddbb6dcde71f25c6034cb97d28291b6c264
+https://github.com/futuruz-rt/arquitetura-de-software/commit/45d1bfda780988bff57f87283adddff1d3c3f881
+https://github.com/futuruz-rt/arquitetura-de-software/commit/815cf97d3b170776debcb6129d5fb058949f2025
+https://github.com/futuruz-rt/arquitetura-de-software/commit/8967584939aaec9dad5f0e3306e267f6ae6909a9
+
+Houve um aumento de 19 linhas de código após a nova atualização
+
+┌──(root💀kali)-[/opt/cloc]
+└─# ./cloc arquitetura-de-software          
+      10 text files.
+      10 unique files.                              
+       1 file ignored.
+
+github.com/AlDanial/cloc v 1.89  T=0.03 s (393.1 files/s, 19735.1 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Java                             8             69              2            354
+Markdown                         1              5              0             39
+Maven                            1              0              0             33
+-------------------------------------------------------------------------------
+SUM:                            10             74              2            426
+-------------------------------------------------------------------------------
+
+</pre>
